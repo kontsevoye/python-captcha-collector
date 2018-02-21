@@ -43,3 +43,6 @@ def check():
                 return redirect(url_for('solve', success=0))
         else:
             return redirect(url_for('solve', success=2))
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')

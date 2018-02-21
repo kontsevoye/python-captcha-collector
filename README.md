@@ -47,19 +47,19 @@ venv3/bin/pip install -r requirements.txt
 Make your .env file with configurations
 
 ```
-cp .env.exmple .env
+cp .env.example .env
 ```
 
 Now you can run web server in production mode
 
 ```
-FLASK_APP=index.py venv3/bin/flask run
+FLASK_APP=pcc.py venv3/bin/flask run
 ```
 
 Or in debug mode
 
 ```
-FLASK_APP=index.py FLASK_DEBUG=1 venv3/bin/flask run
+FLASK_APP=pcc.py FLASK_DEBUG=1 venv3/bin/flask run
 ```
 
 After all you cann access this app through browser. By default it run on http://127.0.0.1:5000/ 

@@ -1,0 +1,20 @@
+<!doctype html>
+<title>Time to solve</title>
+{% if success == 1 %}
+  <h1>You're goddamn right</h1>
+{% elif success == 0 %}
+  <h1>You're soso</h1>
+{% elif success == 2 %}
+  <h1>You're invalid</h1>
+{% endif %}
+{% if picture %}
+  <img src="/{{ picture }}"><br>
+  <form action="/check" method="post">
+    <input autofocus type="number" name="code">
+    <input type="submit">
+    <input type="hidden" value="{{ picture }}" name="picture">
+  </form>
+{% else %}
+  <h1>Cant get picture..</h1>
+{% endif %}
+<!-- <script src="/static/js/axios.min.js"></script> -->

@@ -18,10 +18,10 @@ First of all you need a python3 with pip
 # dnf install python3 python3-pip
 ```
 
-For next you will need virtualenv
+For next you will need pipenv
 
 ```
-# pip3 install virtualenv
+# pip3 install pipenv
 ```
 
 ### Installing
@@ -34,16 +34,10 @@ Copy repository to a local machine and cd into it
 git clone https://github.com/instane/python-captcha-collector.git && cd python-captcha-collector
 ```
 
-Create virtual environment
-
-```
-virtualenv -p python3 venv3
-```
-
 Install requirement libraries
 
 ```
-venv3/bin/pip install -r requirements.txt
+pipenv install
 ```
 
 Make your .env file with configurations
@@ -52,16 +46,16 @@ Make your .env file with configurations
 cp .env.example .env
 ```
 
-Now you can run web server in production mode
+Spawn a shell with the virtualenv activated
 
 ```
-FLASK_APP=pcc.py venv3/bin/flask run
+pipenv shell
 ```
 
-Or in debug mode
+Now you can run web server
 
 ```
-FLASK_APP=pcc.py FLASK_DEBUG=1 venv3/bin/flask run
+python pcc.py
 ```
 
 After all you cann access this app through browser. By default it run on http://127.0.0.1:5000/ 

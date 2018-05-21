@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+certifi = "*"
+chardet = "*"
+click = "*"
+Flask = "*"
+idna = "*"
+itsdangerous = "*"
+"Jinja2" = "*"
+MarkupSafe = "*"
+python-dotenv = "*"
+requests = "*"
+"urllib3" = "*"
+uWSGI = "*"
+Werkzeug = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
